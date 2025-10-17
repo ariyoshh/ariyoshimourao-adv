@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Vanessa Harumi - Advogada Trabalhista</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dra. Vanessa Harumi</h1>
+            <p>Advogada Trabalhista • OAB (inserir quando tiver)</p>
+        </header>
+        
+        <div class="content">
+            <h2>Fale comigo</h2>
+            
+            <form id="contatoForm">
+                <div class="form-group">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="from_name" placeholder="Seu nome completo" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="user_email" placeholder="seu@email.com" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone/WhatsApp *</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Descreva seu caso *</label>
+                    <textarea id="mensagem" name="message" placeholder="Descreva brevemente sua situação trabalhista..." rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" id="submitBtn">Enviar Mensagem</button>
+            </form>
+            
+            <div id="status"></div>
+        </div>
+        
+        <footer>
+            <p>Dra. Vanessa Harumi - Advogada Trabalhista</p>
+            <p>Entre em contato para uma consultoria jurídica personalizada</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
